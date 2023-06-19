@@ -1,0 +1,17 @@
+.grupo__fieldset{
+    border:none;
+}
+
+.formulario__input{
+    width: 240px;
+    height: 30px;
+}
+.formulario__input:focus{
+    outline-color:#1875ff ;
+}
+.formulario__input-error{
+    color:red;
+}
+.formulario__mensaje-exito{
+    color:green;
+}

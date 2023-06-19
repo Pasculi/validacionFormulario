@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Formularios</title>
+  </head>
+  <body>
+    <div class="container">
+      <fieldset class="grupo__fieldset">
+        <legend>Datos Apoderado</legend>
+        <form action="" class="formulario" id="formulario_apoderado">
+          <!-- GRUPO APODERADO -->
+          <div class="formulario__grupo" id="grupo__usuario">
+            <label for="usuario" class="formulario__label">Nombre Apoderado</label>
+            <div class="formulario__grupo-input">
+              <input
+                type="text"
+                class="formulario__input"
+                name="usuario"
+                id="usuario"
+                placeholder="Joe Doe"
+              />
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+              El usuario tiene que ser de 4 a 16 carácteres y solo puede
+              contener, letras y guión bajo.
+            </p>
+          </div>
+          <!-- GRUPO CORREO -->
+          <div class="formulario__grupo" id="grupo__correo">
+            <label for="jobs" class="formulario__label">Jobs</label>
+            <div class="formulario__grupo-input">
+              <input
+                type="email"
+                class="formulario__input"
+                name="correo"
+                id="correo"
+                placeholder="Correo"
+              />
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+              El trabajo tiene que ser de 4 a 16 carácteres y solo puede
+              contener, letras y guión bajo.
+            </p>
+          </div>
+          <!-- GRUPO DE TERMINO Y CONDICONES -->
+      <div class="formulario__grupo-terminos" id="grupo__terminos">
+        <label class="formulario__label">
+          <input type="checkbox" class="formulario__checkbox" name="terminos" id="terminos">Acepto los terminos y condiciones.
+        </label>
+      </div>
+      <div class="formulario__mensaje" id="formulario__mensaje">
+        <p><i class="fas fa-exclamation-triangle"></i><b>Error: Por favor rellene el formulario correctamente.</b> </p>
+
+      </div>
+
+      <!-- GRUPO DE BOTON ENVIAR -->
+      <div class="formulario__grupo .formulario__grupo-btn-enviar">
+        <button type="submit" class="formulario__btn">Enviar</button>
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+      </div>
+        </form>
+      </fieldset>
+      <form  action="" class="formulario" id="formulario_alumno">
+
+          <fieldset class="grupo__fieldset">
+            <legend>Datos del Alumno</legend>
+             <!-- GRUPO ALUMNO -->
+          <div class="formulario__grupo" id="grupo__alumno">
+            <label for="alumno" class="formulario__label">Nombre Alumno</label>
+            <div class="formulario__grupo-input">
+              <input
+                type="text"
+                class="formulario__input"
+                name="alumno"
+                id="alumno"
+                placeholder="Pipiris Nice"
+              />
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+              El usuario tiene que ser de 4 a 16 carácteres y solo puede
+              contener, letras y guión bajo.
+            </p>
+          </div>
+          <!-- GRUPO URL -->
+          <div class="formulario__grupo" id="grupo__url">
+            <label for="jobs" class="formulario__label">Curso</label>
+            <div class="formulario__grupo-input">
+              <input
+                type="url"
+                class="formulario__input"
+                name="url"
+                id="url"
+                placeholder="url__image"
+              />
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">
+              El trabajo tiene que ser de 4 a 16 carácteres y solo puede
+              contener, letras y guión bajo.
+            </p>
+          </div>
+          
+            <!-- GRUPO DE BOTON ENVIAR -->
+          <div class="formulario__grupo .formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+          </div>
+          </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
